@@ -1,0 +1,118 @@
+
+
+
+.headerWrap{
+width: 100%;
+height: 100px;
+background: #1c1e1f;
+display: flex;
+align-items: center;
+justify-content: space-around;
+
+
+}
+.locationWrap{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    
+}
+.logoStyle{
+    width: 80px;
+    height: 80px;
+}
+.locationIcon{
+    color: #fff500;
+    font-size: 2em;
+    margin-right: 25px;
+    
+}
+.locationText{
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Raleway', sans-serif;
+}
+.contactWrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconAuth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff500;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.iconUser{
+    color: #fff500;
+    font-size: 1.8em;
+    
+}
+.phoneLink{
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.enterUs{
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+.navMenu{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+}
+.navMenuLi{
+    position: relative;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+    padding-right: 1vw;
+  padding-left: 1vw;
+  border-right: 2px solid ;
+    z-index: 1;
+    font-weight: bolder;
+}
+
+.navMenuLi:last-child{
+    border-right: 0;
+  }
+.navMenuLiA{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+    
+}
+.navMenuLi::before{
+    content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background: #fff500;
+  transition: all .5s ease-in-out;
+z-index: -1;
+
+  }
+  .navMenuLi:hover::before{
+    
+    width: 100%;
+  }
