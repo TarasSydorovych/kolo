@@ -20,10 +20,10 @@ export default function Header() {
 
               </div>
               <ul className={css.navMenu}>
-                <li className={css.navMenuLi}><Link className={css.navMenuLiA}> Головна</Link></li>
+                <li className={css.navMenuLi}><Link to="/" className={css.navMenuLiA}> Головна</Link></li>
                 <li className={css.navMenuLi}><Link className={css.navMenuLiA}> Акції</Link></li>
-                <li className={css.navMenuLi}><Link className={css.navMenuLiA}> Відгуки</Link></li>
-                <li className={css.navMenuLi}><Link className={css.navMenuLiA}> Про нас</Link></li>
+                <li className={css.navMenuLi}><Link to="/response" className={css.navMenuLiA}> Відгуки</Link></li>
+                <li className={css.navMenuLi}><Link to="/about" className={css.navMenuLiA}> Про нас</Link></li>
               </ul>
 
               <div className={css.contactWrap}>

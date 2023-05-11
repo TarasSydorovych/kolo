@@ -1,7 +1,7 @@
 
 
 .mainPageWrap{
-
+position: relative;
 }
 .blockAdresWrap{
     width: 100%;
@@ -247,4 +247,90 @@ top:50%;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+.categoryListWrap{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ulListCategory{
+    width: 80%;
+    display: flex;
+    
+}
+.ulListLi{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    color: white;   
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.payInfoWrapALL{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.payInfoWrapALLForContact{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.paymentH2A{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    color: white; 
+    margin-top: 40px;
+}
+.payBlockWrap{
+    width: calc(80% - 50px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 30px;
+    padding-right: 20px;
+    border-radius: 20px;
+    background: #1c1e1f;
+    padding-bottom: 20px;
+}
+.payH4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3em;
+    color: white; 
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.payP{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    color: white; 
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+.socialWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weAtSocial{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3em;
+    color: white; 
+    font-weight: bold;
+}
+.instagram{
+    color: #dd1333;
+    font-size: 4em;
+}
+.spanPayP{
+    font-weight: bolder;
 }

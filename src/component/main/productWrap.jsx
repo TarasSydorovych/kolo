@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import ProductSmall from '../product/productSmall'
 import css from './mainPage.module.css'
 
@@ -8,8 +9,10 @@ import css from './mainPage.module.css'
 
 
 
-export default function ProductWrap() {
+export default function ProductWrap({bigProduct, setBigProduct, products, setCurrentProd}) {
 
+
+    
 
 
 
@@ -17,7 +20,11 @@ export default function ProductWrap() {
         <section className={css.blockAdresWrap}>
         <div className={css.wrapAdr}>
             <div className={css.blockProductWrap}>
-<ProductSmall/>
+                {products.map((el,index) => {
+
+return <ProductSmall setCurrentProd={setCurrentProd} key={index} el={el} setBigProduct={setBigProduct} bigProduct={bigProduct}/>
+                })}
+
 
 
 

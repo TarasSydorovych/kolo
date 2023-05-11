@@ -1,0 +1,127 @@
+.responseBlockWrap{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.responseBlock{
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.respOneWrap{
+    background: #1c1e1f;
+    width: calc(48.5% - 40px);
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 40px;
+}
+.infoRespWrap{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #282828;
+}
+.respDate{
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.respName{
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.aiFillLike{
+    font-size: 1.2em;
+    color: grey;
+    margin-right: 10px;
+}
+.data{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 1.2em;
+    margin: 0;
+}
+.aiFillLike{
+    font-size: 1.2em;
+    color: #fff500;
+    margin-right: 10px;
+}
+.theResponse{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.finishResp{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 1.2em;
+    margin: 0;
+    margin-top: 20px;
+}
+.writeRespWrap{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputResp{
+    width: 300px;
+    height: 30px;
+    margin-right: 40px;
+    border: 1px solid #fff500;
+    padding-left: 15px;
+}
+.inputResp:focus{
+    border: 1px solid #fff500;
+    font-family: 'Raleway', sans-serif;
+}
+.buttonResp{
+    position: relative;
+    height: 34px;
+    width: 200px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    border: none;
+    background: none;
+    color: #504e4e;
+    cursor: pointer;
+    
+}
+.buttonResp::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 100%;
+    background: #fff500;
+    z-index: -1;
+  color: #282828;
+}
+.buttonResp:hover::before{
+    width: 100%;
+    transition: all .5s ease-in-out;
+  }

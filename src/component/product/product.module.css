@@ -10,6 +10,7 @@
     justify-content: space-between;
     margin: 15px;
     background: #1c1e1f;
+    position: relative;
     border-radius: 10px;
 }
 .picBlockWrap{
@@ -20,6 +21,7 @@
     width: 100%;
     height: 161.5;
     border-radius: 10px 10px 0 0;
+    cursor: pointer;
 }
 .prodLike{
     width: 30px;
@@ -63,6 +65,7 @@
   margin-top: 0;
     color: white;
     font-size: 0.9em;
+    cursor: pointer;
 }
 .productDescription{
     font-family: 'Raleway', sans-serif;
@@ -99,4 +102,127 @@
     font-size: 0.9em;
     cursor: pointer;
 
+}
+.productBigWrap{
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  position: absolute;
+ 
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+}
+.prodBigWrapProd{
+  margin-top: 30px;
+  position: relative;
+  width: 60%;
+  height: auto;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  background: black;
+  
+  z-index: 4;
+}
+.closeBigProd{
+  position: absolute;
+  font-size: 2em;
+  top: 4%;
+  right: 4%;
+  color: white;
+  cursor: pointer;
+}
+.pictureProductBig{
+  width: 100%;
+  height: 438px;
+  border-radius: 20px;
+}
+.nameProdutBig{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+    color: white;
+}
+.prodDescriptionBig{
+  font-family: 'Raleway', sans-serif;
+  
+    color: white;
+}
+.pWeigthProductBig{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+    color: white;
+}
+.fullPriceCountWrap{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.summaWrap{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.countWrap{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sumaProdBig{
+  font-family: 'Raleway', sans-serif;
+ font-weight: bold;
+    color: grey;
+}
+.sumaProdBigPrice{
+  font-family: 'Raleway', sans-serif;
+ font-weight: bold;
+    color: #fff500;
+}
+.counterWa{
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.countButton{
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #fff500;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  cursor: pointer;
+}
+.theSameCount{
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4em;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.wrapButtonOreder{
+  width: 100%;
+  margin-top: 20px;
+  border-top: 1px solid #282828;
+}
+.buttonOrder{
+  margin-top: 20px;
+  width: 100%;
+  height: 40px;
+  background-color: #fff500;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
 }

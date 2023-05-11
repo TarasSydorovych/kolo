@@ -2,29 +2,33 @@ import css from './product.module.css'
 import p from '../../img/p.jpg'
 import { AiFillHeart } from "react-icons/ai";
 import { BsLink45Deg } from "react-icons/bs";
+import ProductBig from './productBig';
 
 
-export default function ProductSmall() {
+export default function ProductSmall({bigProduct, setBigProduct, el, setCurrentProd}) {
 
-
+const bigWindowOpen = () => {
+    setCurrentProd(el)
+    setBigProduct(true)
+}
 
 
     return(
         <div className={css.productWrap}>
            <div className={css.picBlockWrap}>
-            <img src={p} className={css.productPic}/>
+            <img src={el.foto} className={css.productPic} onClick={bigWindowOpen}/>
             <div className={css.prodLike}><AiFillHeart className={css.likeStyle}/></div>
             <div className={css.prodLikeLink}><BsLink45Deg className={css.likeStyle}/></div>
            </div>
 
 <div className={css.descriptionWrap}>
-    <h1 className={css.productName}>Піца з прошуто та руколою</h1>
-    <p className={css.productDescription}>Тісто для піци готуємо на основі борошна Stagioni ( з твердих сортів пшениці), яке дозріває 48 годин та легко засвоюється</p>
-    <p className={css.pWeigthProduct}>460 г.</p>
+    <h1 className={css.productName} onClick={bigWindowOpen}>{el.prodName}</h1>
+    <p className={css.productDescription}>{el.descProduct}</p>
+    <p className={css.pWeigthProduct}>{el.weight} г.</p>
 </div>
 
 <div className={css.priceWrapCard}>
-<p className={css.prodPriceFull}>328 $</p>
+<p className={css.prodPriceFull}>{el.price} ₴</p>
 
 <p className={css.inCart}>У КОШИК</p>
 </div>
