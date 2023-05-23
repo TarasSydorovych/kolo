@@ -4,7 +4,7 @@ import p from '../../img/p.jpg'
 import { AiOutlineClose } from "react-icons/ai";
 import { useEffect, useState } from 'react';
 import { useRef } from 'react';
-
+import addToCart from '../../function/addToCard';
 export default function ProductBig({setBigProduct, scrollHeight, currentProd}) {
     const productBigWrapRef = useRef(null);
 
@@ -54,8 +54,8 @@ useEffect(() => {
 
      </div>
 <div className={css.wrapButtonOreder}>
-    <button className={css.buttonOrder}>
-    ДОДАТИ ТОВАР НА 468 ₴
+    <button className={css.buttonOrder} onClick={() => addToCart(currentProd.uid)}>
+    ДОДАТИ ТОВАР НА {currentProd.price} ₴
     </button>
 </div>
 

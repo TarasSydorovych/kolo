@@ -1,0 +1,255 @@
+.fullOrderWrap{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.orderWrapDetail{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.ofOrder{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.clienNamePhoneWrap{
+    width: 50%;
+    height: auto;
+    background: #343738;
+    border-radius: 20px;
+    padding: 20px;
+}
+.userInfoInputPhone{
+
+    width: 100%;
+height: 48px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+padding-left: 20px;
+font-size: 1.4em;
+line-height: 22px;
+color: #fff500;
+/* White */
+
+background: none;
+border: none;
+}
+.userInfoInputPhoneCount{
+
+    width: 70%;
+height: 48px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+padding-left: 20px;
+font-size: 1.4em;
+line-height: 22px;
+color: #fff500;
+/* White */
+
+background: none;
+border: none;
+}
+.userInfoInputPhoneCount:focus {
+    outline: none;
+    border: none;
+  }
+.userInfoInputPhoneAdr{
+
+    width: 100%;
+height: 48px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+padding-left: 20px;
+font-size: 0.9em;
+line-height: 22px;
+color: #fff500;
+/* White */
+
+background: none;
+border: none;
+}
+.userInfoInputPhoneAdr:focus {
+    outline: none;
+    border: none;
+  }
+.userInfoInputPhone:focus {
+    outline: none;
+    border: none;
+  }
+  .wrapSmallElement{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #3f4344;
+  }
+  .wrapSmallElementNew{
+    width: 100%;
+   
+    height: auto;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #3f4344;
+  }
+  .nameOfInp{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 1.4em;
+  }
+  .nameOfInpAdr{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 0.9em;
+  }
+  .adressBlockWrap{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #343738;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 30px;
+  }
+.inputAdressWrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+}
+.commentWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+}
+.commentStyle{
+    width: 80%;
+    height: 200px;
+    border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+font-style: normal;
+font-weight: 400;
+padding-left: 20px;
+font-size: 1em;
+line-height: 22px;
+color: #fff500;
+border: none;
+background: #515557;
+word-wrap: break-word;
+vertical-align: top;
+resize: none;
+padding: 10px;
+}
+.commentStyle:focus {
+    outline: none;
+    border: none;
+
+  }
+
+
+
+
+
+
+
+  .toggleButton {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    margin-left: 20px;
+  }
+  
+  .toggleButton input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #fff500;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(16px);
+  }
+  .bottonFullOrder{
+    width: 104%;
+    height: 50px;
+    border-radius: 20px;
+    background: #fff500;
+    border: none;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 1.4em;
+    margin-top: 20px;
+  
+  }
+  .customSelect{
+width: 104%;
+height: 40px;
+color: #fff500;
+font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    padding-left: 20px;
+    border: 2px solid #fff500;
+    background: none;
+
+  }
+  .sectionWrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .payP{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: white;
+  }
+  .customOpin{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+  }

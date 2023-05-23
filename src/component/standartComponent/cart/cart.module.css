@@ -1,0 +1,141 @@
+.cartWrap{
+    width: 700px;
+    height: auto;
+    background: #141516;
+    position: absolute;
+    top: 60px;
+    border-radius: 20px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    cursor: default;
+}
+.cardTextOutWrap{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cardTitle{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3em;
+    color: white;
+    margin: 0;
+}
+.aOutlineClose{
+    font-size: 1.5em;
+    color: grey;
+    cursor: pointer;
+}
+.prodInCardWrap{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #282828;
+    padding-bottom: 20px;
+}
+.proInCardPic{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    
+}
+.prodCardDescWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15px;
+}
+.prodInCardName{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    color: white;
+    margin: 0;
+}
+.prodInCardDesc{
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+    color: rgb(177, 174, 174);
+    margin: 0;
+    width: 90%;
+}
+.counterWa{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .countButton{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #fff500;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  .theSameCount{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4em;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .finalPrice{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    margin-left: 15px;
+    
+  }
+  .aiOutlineRest{
+    font-size: 3.5em;
+    color: grey;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  .finalPriceAllWrap{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .namePrice{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .symText{
+    font-size: 1em;
+    color: grey;
+  }
+  .payText{
+    font-size: 0.9em;
+    font-weight: bold;
+    color: white;
+    margin-top: 0;
+  }
+  .buttonOrder{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    background: #fff500;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+  }

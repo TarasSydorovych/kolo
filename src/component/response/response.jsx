@@ -6,7 +6,7 @@ import css from './response.module.css'
 import ResponseBlock from './responseBlock'
 
 
-export default function Response({setDostavka, dostavka}) {
+export default function Response({priceForCard, setDostavka, dostavka}) {
 
 
 
@@ -14,7 +14,7 @@ export default function Response({setDostavka, dostavka}) {
     return(
         <div>
             <Header/>
-            <FirstBlock dostavka={dostavka} setDostavka={setDostavka}/>
+            <FirstBlock priceForCard={priceForCard} dostavka={dostavka} setDostavka={setDostavka}/>
            <ResponseBlock/>
             <Footer/>
 

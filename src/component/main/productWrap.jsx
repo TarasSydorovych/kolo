@@ -9,7 +9,7 @@ import css from './mainPage.module.css'
 
 
 
-export default function ProductWrap({bigProduct, setBigProduct, products, setCurrentProd}) {
+export default function ProductWrap({clickCard, serClickCard, bigProduct, setBigProduct, products, setCurrentProd}) {
 
 
     
@@ -22,7 +22,7 @@ export default function ProductWrap({bigProduct, setBigProduct, products, setCur
             <div className={css.blockProductWrap}>
                 {products.map((el,index) => {
 
-return <ProductSmall setCurrentProd={setCurrentProd} key={index} el={el} setBigProduct={setBigProduct} bigProduct={bigProduct}/>
+return <ProductSmall clickCard={clickCard} serClickCard={serClickCard} setCurrentProd={setCurrentProd} key={index} el={el} setBigProduct={setBigProduct} bigProduct={bigProduct}/>
                 })}
 
 

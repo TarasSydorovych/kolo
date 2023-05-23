@@ -49,65 +49,109 @@ export default function AddProduct() {
 
     const [formData, setFormData] = useState({});
 
-    const handleFormSubmit = (event) => {
-      event.preventDefault(); // prevent the default form submission behaviour
+//     const handleFormSubmit = (event) => {
+//       event.preventDefault(); // prevent the default form submission behaviour
   
-      // Collect form data and update the state
-      const form = event.target;
+//       // Collect form data and update the state
+//       const form = event.target;
       
-      const data = new FormData(form);
-      const formDataObj = Object.fromEntries(data.entries());
-      setFormData(formDataObj);
+//       const data = new FormData(form);
+//       const formDataObj = Object.fromEntries(data.entries());
+//       setFormData(formDataObj);
 
-      console.log('перший форм дата',formData)
-      //добавка товару якщо є два фото
-      if (formData.foto.name){
-        const newObj = formData;
-        const storageRef1 = ref(storage, formData.foto.name);
+//       console.log('перший форм дата',formData)
+//       //добавка товару якщо є два фото
+//       if (formData.foto.name){
+//         const newObj = formData;
+//         const storageRef1 = ref(storage, formData.foto.name);
   
-  const uploadTask1 = uploadBytesResumable(storageRef1, formData.foto);
+//   const uploadTask1 = uploadBytesResumable(storageRef1, formData.foto);
 
-  uploadTask1.on('state_changed',
-  (snapshot) => {
-    const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-    console.log('progress1', progress);
-  },
-  (error) => {
-    console.log('error uploading file1', error);
-  }
-);
-
-
+//   uploadTask1.on('state_changed',
+//   (snapshot) => {
+//     const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+//     console.log('progress1', progress);
+//   },
+//   (error) => {
+//     console.log('error uploading file1', error);
+//   }
+// );
 
 
-uploadTask1.on('state_changed', async () => {
-    const downloadURL1 = await getDownloadURL(uploadTask1.snapshot.ref);
+
+
+// uploadTask1.on('state_changed', async () => {
+//     const downloadURL1 = await getDownloadURL(uploadTask1.snapshot.ref);
     
-      newObj.foto = downloadURL1;
+//       newObj.foto = downloadURL1;
      
-      newObj.uid = uuidv4();
-      const frankDocRef = doc(db, 'product', newObj.uid);
-      await setDoc(frankDocRef, newObj);
+//       newObj.uid = uuidv4();
+//       const frankDocRef = doc(db, 'product', newObj.uid);
+//       await setDoc(frankDocRef, newObj);
    
-  });
+//   });
 
 
         
 
 
 
-      }else if(formData.foto){
-        console.log('нема імя')
-      }
+//       }else if(formData.foto){
+//         console.log('нема імя')
+//       }
 
-      // Log the form data to the console
-
-      
+//       // Log the form data to the console
 
       
-    };
+
+      
+//     };
 
 
+
+const handleFormSubmit = async (event) => {
+    event.preventDefault();
+  
+    const form = event.target;
+    const data = new FormData(form);
+    const formDataObj = Object.fromEntries(data.entries());
+    setFormData(formDataObj);
+  
+    console.log('перший форм дата', formDataObj.foto.name);
+  
+    if (formDataObj.foto && formDataObj.foto.name) {
+      const newObj = formDataObj;
+      const storageRef = ref(storage, formDataObj.foto.name);
+      const uploadTask = uploadBytesResumable(storageRef, formDataObj.foto);
+  
+      uploadTask.on('state_changed',
+        (snapshot) => {
+          const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+          console.log('progress', progress);
+        },
+        (error) => {
+          console.log('error uploading file', error);
+        }
+      );
+  
+      const unsubscribe = uploadTask.on('state_changed', async () => {
+        const downloadURL = await getDownloadURL(uploadTask.snapshot.ref);
+        newObj.foto = downloadURL;
+        newObj.uid = uuidv4();
+  
+        const docRef = doc(db, 'product', newObj.uid);
+        await setDoc(docRef, newObj);
+        window.location.reload();
+      });
+  
+      // Відписатися від прослуховування подій
+      unsubscribe();
+
+    } else if (formData.foto) {
+      console.log('нема імені');
+    }
+  
+  };
 
 
 

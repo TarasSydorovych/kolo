@@ -100,6 +100,7 @@ position: relative;
     color: white;
 }
 .cardWrap{
+    position: relative;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -109,9 +110,32 @@ position: relative;
     background: #343738;
     cursor: pointer;
 }
+.cardWrapWhisPrice{
+    position: relative;
+    width: auto;
+    height: 50px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff500;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 .card{
     font-size: 1.5em;
     color: #fff500;
+}
+.cardWhisPrice{
+    font-size: 1.5em;
+    color: black;
+}
+.iconCardWrapPriceP{
+    font-size: 1.5em;
+    color: black;
+    margin: 0;
+    margin-left: 5px;
 }
 .banerSectionWrap{
     width: 100%;

@@ -10,7 +10,7 @@ import WorkTime from './workTime'
 
 
 
-export default function AboutUs({setDostavka, dostavka}) {
+export default function AboutUs({priceForCard, setDostavka, dostavka}) {
 
 
 
@@ -18,7 +18,7 @@ export default function AboutUs({setDostavka, dostavka}) {
     return(
         <div>
             <Header/>
-            <WorkTime dostavka={dostavka} setDostavka={setDostavka}/>
+            <WorkTime priceForCard={priceForCard} dostavka={dostavka} setDostavka={setDostavka}/>
             <AboutCompany/>
             <OurContact/>
             <Rekviz/>

@@ -6,7 +6,7 @@ import { GoogleMap, LoadScript } from '@react-google-maps/api';
 
 
 
-export default function WorkTime({setDostavka, dostavka}) {
+export default function WorkTime({priceForCard, setDostavka, dostavka}) {
 
     const containerStyle = {
         width: '90%',
@@ -32,7 +32,7 @@ export default function WorkTime({setDostavka, dostavka}) {
 
     return(
         <div className={css.timeWrap}>
-            <FirstBlock dostavka={dostavka} setDostavka={setDostavka}/>
+            <FirstBlock priceForCard={priceForCard} dostavka={dostavka} setDostavka={setDostavka}/>
             <div className={css.mapWrap}>
                 <div className={css.workTimeHour}>
                     <h1 className={css.regumRobotu}>Режим роботи</h1>
